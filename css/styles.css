@@ -77,6 +77,16 @@ body {
   text-transform: uppercase;
 }
 
+.img {
+  display: block;
+  margin-right: 76px;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 /*
   |============================
   | Header styles
@@ -85,7 +95,23 @@ body {
 /*
   |===|Nav menu style|===|
 */
-.site-nav-item {}
+.header {
+  border-bottom: 1px var(--Cornflower);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.site-nav-item {
+  padding: 24px 0;
+}
 
 .site-nav-text {
   font-weight: 500;
@@ -109,6 +135,10 @@ body {
   font-style: normal;
 }
 
+.address-list {
+  display: flex;
+  gap: 40px;
+}
 .address-list-item {
   line-height: 1.5;
   color: var(--Slate);
