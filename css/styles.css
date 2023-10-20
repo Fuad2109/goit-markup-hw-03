@@ -166,6 +166,7 @@ h1,h2,h3,h4,h5,h6,p {
 */
 .hero {
   background-color: var(--Navy-blue);
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -176,6 +177,7 @@ h1,h2,h3,h4,h5,h6,p {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--White);
+  max-width: 496px;
 }
 
 .hero-btn {
@@ -185,7 +187,11 @@ h1,h2,h3,h4,h5,h6,p {
   letter-spacing: 0.04em;
   cursor: pointer;
   color: var(--White);
-
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -198,9 +204,11 @@ h1,h2,h3,h4,h5,h6,p {
   | Benefits styles
   |============================
 */
-.benefits {}
+.benefits {
+  padding: 120px 0
+}
 
-.benefits-visually-hidden-title {
+.visually-hidden {
   visibility: hidden;
   white-space: nowrap;
   overflow: hidden;
@@ -208,9 +216,14 @@ h1,h2,h3,h4,h5,h6,p {
   clip: rect(0 0 0 0);
 }
 
-.benefits-list {}
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
 
-.benefits-list-item {}
+.benefits-list-item {
+  width: calc((100% - 72px) / 4);
+}
 
 .benefits-subtitle {
   font-family: var(--primary-font);
@@ -219,6 +232,7 @@ h1,h2,h3,h4,h5,h6,p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--Navy-blue);
+  margin-bottom: 8px;
 }
 
 .benefits-text {
