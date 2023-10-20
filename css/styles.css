@@ -45,16 +45,19 @@
   | Basic styles
   |============================
 */
+
 body {
   font-family: var(--primary-font);
   color: var(--Slate);
   background-color: var(--White);
   letter-spacing: 0.02em;
 }
-
 /*
 |===|Reset>>>|===|
 */
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
 .link {
   text-decoration: none;
   color: currentColor;
@@ -75,6 +78,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .img {
@@ -82,7 +86,6 @@ body {
 }
 
 .container {
-  display: flex;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -94,15 +97,25 @@ body {
 */
 
 .header {
-  border-bottom: 1px var(--Cornflower);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
+
+.container-header {
+  display: flex;
+}
+
 /*
   |===|Nav menu style|===|
 */
 
 .site-nav {
   display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
   align-items: center;
+  margin-right: 332px;
 }
 
 .site-nav-list {
@@ -118,6 +131,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   color: var(--Navy-blue);
+  padding: 24px 0;
 }
 
 .logo-black {
