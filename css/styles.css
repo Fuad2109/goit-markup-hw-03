@@ -79,10 +79,10 @@ body {
 
 .img {
   display: block;
-  margin-right: 76px;
 }
 
 .container {
+  display: flex;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -92,12 +92,13 @@ body {
   | Header styles
   |============================
 */
-/*
-  |===|Nav menu style|===|
-*/
+
 .header {
   border-bottom: 1px var(--Cornflower);
 }
+/*
+  |===|Nav menu style|===|
+*/
 
 .site-nav {
   display: flex;
