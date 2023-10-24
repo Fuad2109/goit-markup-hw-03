@@ -225,12 +225,10 @@ h1,h2,h3,h4,h5,h6,p {
 .benefits-list {
   display: flex;
   gap: 24px;
-  margin: 0;
-  padding: 0;
 }
 
 .benefits-list-item{
-  width: calc((1158 - 72px) / 4);
+
 }
 
 .benefits-subtitle {
